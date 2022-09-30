@@ -15,11 +15,11 @@ time_index = []
 
 #function to collect the satellite data and produce a yearly country specific average NDVI value
 def ndvi_collection(country, year):
-    location = ee.FeatureCollection("USDOS/LSIB_SIMPLE/2017").filter(ee.Filter.eq("country_na", str(country)))
+    location = ee.FeatureCollection("FAO/GAUL_SIMPLIFIED_500m/2015/level0").filter(ee.Filter.eq("ADM0_NAME", str(country)))
     dataset = ee.ImageCollection("NOAA/CDR/AVHRR/NDVI/V5").select("NDVI").filterDate(str(year)+"-01-01", str(year+1)+"-01-01")
     
     def set_property(image):
-        dict = image.reduceRegion(ee.Reducer.mean(), location, maxPixels=1e9)
+        dict = image.reduceRegion(ee.Reducer.mean(), location, bestEffort=True)
         return image.set(dict)
 
     pixel_values = dataset.map(set_property)
@@ -34,6 +34,7 @@ countries = ee_collection["Area"].tolist()
 print(countries)
 
 #taking the time it takes to iterate through all the countries
+print("Data Collection Started")
 time_begin = time.time()
 
 #iterating through years and countries to get each NDVI value
@@ -50,7 +51,7 @@ while i < len(countries):
 
 #timing again
 time_end = time.time()
-print(time_end - time_begin)
+print("Data collection finished, it took " + str(time_end - time_begin) + " seconds.")
 
 #saving the results to a dataframe which can later be merged with the "base" dataframe
 df_ndvi = pd.DataFrame()
@@ -58,5 +59,3 @@ df_ndvi["Area"] = country_index
 df_ndvi["Year"] = time_index
 df_ndvi["NDVI"] = ndvi_values
 df_ndvi.to_csv("ndvi_data.csv")
-
-print("data collection finished")
