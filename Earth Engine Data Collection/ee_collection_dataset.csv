@@ -1,212 +1,156 @@
-,Area
-0,Afghanistan
-1,Albania
-2,Algeria
-3,American Samoa
-4,Andorra
-5,Angola
-6,Anguilla
-7,Antigua and Barbuda
-8,Argentina
-9,Armenia
-10,Aruba
-11,Australia
-12,Austria
-13,Azerbaijan
-14,Bahamas
-15,Bahrain
-16,Bangladesh
-17,Barbados
-18,Belarus
-19,Belgium
-20,Belize
-21,Benin
-22,Bermuda
-23,Bhutan
-24,Bosnia and Herzegovina
-25,Botswana
-26,Brazil
-27,British Virgin Islands
-28,Brunei Darussalam
-29,Bulgaria
-30,Burkina Faso
-31,Burundi
-32,Cambodia
-33,Cameroon
-34,Cayman Islands
-35,Central African Republic
-36,Chad
-37,Chile
-38,Christmas Island
-39,Cocos (Keeling) Islands
-40,Colombia
-41,Comoros
-42,Congo
-43,Cook Islands
-44,Costa Rica
-45,Croatia
-46,Cuba
-47,Cyprus
-48,Democratic Republic of the Congo
-49,Denmark
-50,Djibouti
-51,Dominica
-52,Dominican Republic
-53,Ecuador
-54,Egypt
-55,El Salvador
-56,Equatorial Guinea
-57,Eritrea
-58,Estonia
-59,Ethiopia
-60,Falkland Islands (Malvinas)
-61,Faroe Islands
-62,Fiji
-63,Finland
-64,France
-65,French Polynesia
-66,Gabon
-67,Gambia
-68,Georgia
-69,Germany
-70,Ghana
-71,Gibraltar
-72,Greece
-73,Greenland
-74,Grenada
-75,Guadeloupe
-76,Guam
-77,Guatemala
-78,Guernsey
-79,Guinea
-80,Guinea-Bissau
-81,Guyana
-82,Haiti
-83,Holy See
-84,Honduras
-85,Hungary
-86,Iceland
-87,India
-88,Indonesia
-89,Iraq
-90,Ireland
-91,Isle of Man
-92,Israel
-93,Italy
-94,Jamaica
-95,Japan
-96,Jersey
-97,Jordan
-98,Kazakhstan
-99,Kenya
-100,Kiribati
-101,Kuwait
-102,Kyrgyzstan
-103,Lao People's Democratic Republic
-104,Latvia
-105,Lebanon
-106,Lesotho
-107,Liberia
-108,Libya
-109,Liechtenstein
-110,Lithuania
-111,Luxembourg
-112,Madagascar
-113,Malawi
-114,Malaysia
-115,Maldives
-116,Mali
-117,Malta
-118,Marshall Islands
-119,Martinique
-120,Mauritania
-121,Mauritius
-122,Mayotte
-123,Mexico
-124,Micronesia (Federated States of)
-125,Monaco
-126,Mongolia
-127,Montenegro
-128,Montserrat
-129,Morocco
-130,Mozambique
-131,Myanmar
-132,Namibia
-133,Nauru
-134,Nepal
-135,Netherlands
-136,New Caledonia
-137,New Zealand
-138,Nicaragua
-139,Niger
-140,Nigeria
-141,Niue
-142,Norfolk Island
-143,Northern Mariana Islands
-144,Norway
-145,Oman
-146,Pakistan
-147,Palau
-148,Panama
-149,Papua New Guinea
-150,Paraguay
-151,Peru
-152,Philippines
-153,Pitcairn
-154,Poland
-155,Portugal
-156,Puerto Rico
-157,Qatar
-158,Republic of Korea
-159,Romania
-160,Rwanda
-161,Saint Kitts and Nevis
-162,Saint Lucia
-163,Saint Vincent and the Grenadines
-164,Samoa
-165,San Marino
-166,Sao Tome and Principe
-167,Saudi Arabia
-168,Senegal
-169,Serbia
-170,Seychelles
-171,Sierra Leone
-172,Singapore
-173,Slovakia
-174,Slovenia
-175,Solomon Islands
-176,Somalia
-177,South Africa
-178,South Georgia and the South Sandwich Islands
-179,South Sudan
-180,Spain
-181,Sri Lanka
-182,Sudan
-183,Suriname
-184,Svalbard and Jan Mayen Islands
-185,Sweden
-186,Switzerland
-187,Syrian Arab Republic
-188,Tajikistan
-189,Thailand
-190,Timor-Leste
-191,Togo
-192,Tokelau
-193,Tonga
-194,Trinidad and Tobago
-195,Tunisia
-196,Turkmenistan
-197,Tuvalu
-198,Uganda
-199,Ukraine
-200,United Arab Emirates
-201,United Republic of Tanzania
-202,United States Virgin Islands
-203,Uruguay
-204,Uzbekistan
-205,Vanuatu
-206,Viet Nam
-207,Western Sahara
-208,Yemen
-209,Zambia
-210,Zimbabwe
+,GAUL
+0,1
+1,3
+2,4
+3,8
+4,12
+5,13
+6,17
+7,18
+8,19
+9,23
+10,24
+11,26
+12,27
+13,28
+14,29
+15,33
+16,34
+17,35
+18,37
+19,40
+20,41
+21,42
+22,47
+23,44
+24,45
+25,49
+26,50
+27,33364
+28,149
+29,57
+30,59
+31,61
+32,66
+33,62
+34,63
+35,64
+36,65
+37,67
+38,68
+39,69
+40,70
+41,71
+42,72
+43,73
+44,40765
+45,75
+46,78
+47,235
+48,79
+49,83
+50,84
+51,85
+52,87
+53,89
+54,90
+55,92
+56,93
+57,94
+58,97
+59,103
+60,107
+61,108
+62,111
+63,113
+64,114
+65,115
+66,116
+67,117
+68,118
+69,119
+70,121
+71,122
+72,123
+73,126
+74,130
+75,132
+76,133
+77,135
+78,137
+79,138
+80,139
+81,140
+82,141
+83,142
+84,144
+85,147
+86,148
+87,150
+88,152
+89,153
+90,155
+91,156
+92,159
+93,160
+94,162
+95,167
+96,2647
+97,169
+98,170
+99,171
+100,172
+101,175
+102,177
+103,178
+104,179
+105,180
+106,182
+107,241
+108,186
+109,187
+110,188
+111,191
+112,192
+113,194
+114,195
+115,196
+116,198
+117,199
+118,202
+119,203
+120,205
+121,211
+122,212
+123,214
+124,215
+125,217
+126,2648
+127,221
+128,223
+129,224
+130,225
+131,226
+132,227
+133,229
+134,231
+135,233
+136,236
+137,237
+138,240
+139,242
+140,243
+141,246
+142,248
+143,249
+144,250
+145,254
+146,255
+147,256
+148,257
+149,260
+150,261
+151,262
+152,263
+153,264
+154,269

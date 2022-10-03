@@ -1,248 +1,162 @@
-,Area,ee check
-0,Afghanistan,working
-1,Åland Islands,name error
-2,Albania,working
-3,Algeria,working
-4,American Samoa,working
-5,Andorra,working
-6,Angola,working
-7,Anguilla,working
-8,Antigua and Barbuda,working
-9,Argentina,working
-10,Armenia,working
-11,Aruba,working
-12,Australia,working
-13,Austria,working
-14,Azerbaijan,working
-15,Bahamas,working
-16,Bahrain,working
-17,Bangladesh,working
-18,Barbados,working
-19,Belarus,working
-20,Belgium,working
-21,Belize,working
-22,Benin,working
-23,Bermuda,working
-24,Bhutan,working
-25,Bolivia (Plurinational State of),name error
-26,"Bonaire, Sint Eustatius and Saba",name error
-27,Bosnia and Herzegovina,working
-28,Botswana,working
-29,Brazil,working
-30,British Virgin Islands,working
-31,Brunei Darussalam,working
-32,Bulgaria,working
-33,Burkina Faso,working
-34,Burundi,working
-35,Cabo Verde,name error
-36,Cambodia,working
-37,Cameroon,working
-38,Canada,size error
-39,Cayman Islands,working
-40,Central African Republic,working
-41,Chad,working
-42,Chagos Archipelago,name error
-43,Channel Islands,name error
-44,Chile,working
-45,"China, Hong Kong SAR",name error
-46,"China, Macao SAR",name error
-47,"China, mainland",name error
-48,Christmas Island,working
-49,Cocos (Keeling) Islands,working
-50,Colombia,working
-51,Comoros,working
-52,Congo,working
-53,Cook Islands,working
-54,Costa Rica,working
-55,Côte d'Ivoire,name error
-56,Croatia,working
-57,Cuba,working
-58,Curaçao,name error
-59,Cyprus,working
-60,Czechia,name error
-61,Democratic People's Republic of Korea,name error
-62,Democratic Republic of the Congo,working
-63,Denmark,working
-64,Djibouti,working
-65,Dominica,working
-66,Dominican Republic,working
-67,Ecuador,working
-68,Egypt,working
-69,El Salvador,working
-70,Equatorial Guinea,working
-71,Eritrea,working
-72,Estonia,working
-73,Eswatini,name error
-74,Ethiopia,working
-75,Falkland Islands (Malvinas),working
-76,Faroe Islands,working
-77,Fiji,working
-78,Finland,working
-79,France,working
-80,French Guyana,name error
-81,French Polynesia,working
-82,French Southern Territories,name error
-83,Gabon,working
-84,Gambia,working
-85,Georgia,working
-86,Germany,working
-87,Ghana,working
-88,Gibraltar,working
-89,Greece,working
-90,Greenland,working
-91,Grenada,working
-92,Guadeloupe,working
-93,Guam,working
-94,Guatemala,working
-95,Guernsey,working
-96,Guinea,working
-97,Guinea-Bissau,working
-98,Guyana,working
-99,Haiti,working
-100,Heard and McDonald Islands,name error
-101,Holy See,working
-102,Honduras,working
-103,Hungary,working
-104,Iceland,working
-105,India,working
-106,Indonesia,working
-107,Iran (Islamic Republic of),name error
-108,Iraq,working
-109,Ireland,working
-110,Isle of Man,working
-111,Israel,working
-112,Italy,working
-113,Jamaica,working
-114,Japan,working
-115,Jersey,working
-116,Jordan,working
-117,Kazakhstan,working
-118,Kenya,working
-119,Kiribati,working
-120,Kuwait,working
-121,Kyrgyzstan,working
-122,Lao People's Democratic Republic,working
-123,Latvia,working
-124,Lebanon,working
-125,Lesotho,working
-126,Liberia,working
-127,Libya,working
-128,Liechtenstein,working
-129,Lithuania,working
-130,Luxembourg,working
-131,Madagascar,working
-132,Malawi,working
-133,Malaysia,working
-134,Maldives,working
-135,Mali,working
-136,Malta,working
-137,Marshall Islands,working
-138,Martinique,working
-139,Mauritania,working
-140,Mauritius,working
-141,Mayotte,working
-142,Mexico,working
-143,Micronesia (Federated States of),working
-144,Monaco,working
-145,Mongolia,working
-146,Montenegro,working
-147,Montserrat,working
-148,Morocco,working
-149,Mozambique,working
-150,Myanmar,working
-151,Namibia,working
-152,Nauru,working
-153,Nepal,working
-154,Netherlands,working
-155,New Caledonia,working
-156,New Zealand,working
-157,Nicaragua,working
-158,Niger,working
-159,Nigeria,working
-160,Niue,working
-161,Norfolk Island,working
-162,North Macedonia,name error
-163,Northern Mariana Islands,working
-164,Norway,working
-165,Oman,working
-166,Pakistan,working
-167,Palau,working
-168,Palestine,name error
-169,Panama,working
-170,Papua New Guinea,working
-171,Paraguay,working
-172,Peru,working
-173,Philippines,working
-174,Pitcairn,working
-175,Poland,working
-176,Portugal,working
-177,Puerto Rico,working
-178,Qatar,working
-179,Republic of Korea,working
-180,Republic of Moldova,name error
-181,Réunion,name error
-182,Romania,working
-183,Russian Federation,size error
-184,Rwanda,working
-185,Saint Barthélemy,name error
-186,"Saint Helena, Ascension and Tristan da Cunha",name error
-187,Saint Kitts and Nevis,working
-188,Saint Lucia,working
-189,Saint Pierre and Miquelon,name error
-190,Saint Vincent and the Grenadines,working
-191,Saint-Martin (French part),name error
-192,Samoa,working
-193,San Marino,working
-194,Sao Tome and Principe,working
-195,Saudi Arabia,working
-196,Senegal,working
-197,Serbia,working
-198,Seychelles,working
-199,Sierra Leone,working
-200,Singapore,working
-201,Sint Maarten (Dutch part),name error
-202,Slovakia,working
-203,Slovenia,working
-204,Solomon Islands,working
-205,Somalia,working
-206,South Africa,working
-207,South Georgia and the South Sandwich Islands,working
-208,South Sudan,working
-209,Spain,working
-210,Sri Lanka,working
-211,Sudan,working
-212,Suriname,working
-213,Svalbard and Jan Mayen Islands,working
-214,Sweden,working
-215,Switzerland,working
-216,Syrian Arab Republic,working
-217,Tajikistan,working
-218,Thailand,working
-219,Timor-Leste,working
-220,Togo,working
-221,Tokelau,working
-222,Tonga,working
-223,Trinidad and Tobago,working
-224,Tunisia,working
-225,Türkiye,name error
-226,Turkmenistan,working
-227,Turks and Caicos Islands,name error
-228,Tuvalu,working
-229,Uganda,working
-230,Ukraine,working
-231,United Arab Emirates,working
-232,United Kingdom of Great Britain and Northern Ireland,name error
-233,United Republic of Tanzania,working
-234,United States Minor Outlying Islands,name error
-235,United States of America,size error
-236,United States Virgin Islands,working
-237,Uruguay,working
-238,Uzbekistan,working
-239,Vanuatu,working
-240,Venezuela (Bolivarian Republic of),name error
-241,Viet Nam,working
-242,Wallis and Futuna Islands,name error
-243,Western Sahara,working
-244,Yemen,working
-245,Zambia,working
-246,Zimbabwe,working
+,GAUL,ee check
+0,1,working
+1,3,working
+2,4,working
+3,8,working
+4,12,working
+5,13,working
+6,17,working
+7,18,working
+8,19,working
+9,23,working
+10,24,working
+11,26,working
+12,27,working
+13,28,working
+14,29,working
+15,33,working
+16,34,working
+17,35,working
+18,37,working
+19,40,working
+20,41,working
+21,42,working
+22,47,working
+23,44,working
+24,45,working
+25,46,shape_error
+26,49,working
+27,50,working
+28,51,shape_error
+29,33364,working
+30,149,working
+31,53,name_error
+32,57,working
+33,59,working
+34,61,working
+35,66,working
+36,62,working
+37,63,working
+38,64,working
+39,65,working
+40,67,working
+41,68,working
+42,69,working
+43,70,working
+44,71,working
+45,72,working
+46,73,working
+47,40765,working
+48,75,working
+49,78,working
+50,235,working
+51,79,working
+52,83,working
+53,84,working
+54,85,working
+55,87,working
+56,89,working
+57,90,working
+58,92,working
+59,93,working
+60,94,working
+61,97,working
+62,103,working
+63,107,working
+64,108,working
+65,111,working
+66,113,working
+67,114,working
+68,115,working
+69,116,working
+70,117,working
+71,118,working
+72,119,working
+73,121,working
+74,122,working
+75,123,working
+76,126,working
+77,130,working
+78,132,working
+79,133,working
+80,135,working
+81,137,working
+82,138,working
+83,139,working
+84,140,working
+85,141,working
+86,142,working
+87,144,working
+88,147,working
+89,148,working
+90,150,working
+91,152,working
+92,153,working
+93,155,working
+94,156,working
+95,159,working
+96,160,working
+97,162,working
+98,167,working
+99,2647,working
+100,169,working
+101,170,working
+102,171,working
+103,172,working
+104,175,working
+105,177,working
+106,178,working
+107,179,working
+108,180,working
+109,182,working
+110,241,working
+111,186,working
+112,187,working
+113,188,working
+114,191,working
+115,192,working
+116,194,working
+117,195,working
+118,196,working
+119,198,working
+120,199,working
+121,202,working
+122,203,working
+123,204,shape_error
+124,205,working
+125,211,working
+126,212,working
+127,214,working
+128,215,working
+129,217,working
+130,2648,working
+131,221,working
+132,223,working
+133,224,working
+134,225,working
+135,226,working
+136,227,working
+137,229,working
+138,231,working
+139,40764,name_error
+140,233,working
+141,236,working
+142,237,working
+143,240,working
+144,242,working
+145,243,working
+146,246,working
+147,248,working
+148,249,working
+149,250,working
+150,254,working
+151,255,working
+152,256,working
+153,257,working
+154,259,shape_error
+155,260,working
+156,261,working
+157,262,working
+158,263,working
+159,264,working
+160,269,working

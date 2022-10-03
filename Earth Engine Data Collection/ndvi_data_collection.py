@@ -4,19 +4,22 @@ import time
 import numpy as np
 import pandas as pd
 
-#activate google earth engine API
+#path to import and export data (paste your own file location here)
+path = (r"C:\Users\nmart\OneDrive - fs-students.de\Dokumente"
+r"\Office\FS\S1\Data Analytics in Business\code_daib"
+r"\Analysing-crop-yields-and-predicting-food-sustainability-of-nations-in-near-future"
+r"\Earth Engine Data Collection")
+
+#connecting to google earth engine
 ee.Authenticate()
 ee.Initialize()
 
-#create empty lists to store our values
-ndvi_values = []
-country_index = []
-time_index = []
-
 #function to collect the satellite data and produce a yearly country specific average NDVI value
 def ndvi_collection(country, year):
-    location = ee.FeatureCollection("FAO/GAUL_SIMPLIFIED_500m/2015/level0").filter(ee.Filter.eq("ADM0_NAME", str(country)))
-    dataset = ee.ImageCollection("NOAA/CDR/AVHRR/NDVI/V5").select("NDVI").filterDate(str(year)+"-01-01", str(year+1)+"-01-01")
+    location = ee.FeatureCollection("FAO/GAUL_SIMPLIFIED_500m/2015/level0"
+    ).filter(ee.Filter.eq("ADM0_CODE", country))
+    dataset = ee.ImageCollection("NOAA/CDR/AVHRR/NDVI/V5"
+    ).select("NDVI").filterDate(str(year)+"-01-01", str(year+1)+"-01-01")
     
     def set_property(image):
         dict = image.reduceRegion(ee.Reducer.mean(), location, bestEffort=True)
@@ -28,14 +31,18 @@ def ndvi_collection(country, year):
 
     return mean_pixel_value
 
-#importing the "base" dataset to create a list of the included countries
-ee_collection = pd.read_csv("ee_collection_dataset.csv")
-countries = ee_collection["Area"].tolist()
-print(countries)
-
 #taking the time it takes to iterate through all the countries
-print("Data Collection Started")
+print("Staring data collection...")
 time_begin = time.time()
+
+#importing the dataset created in "ee_country_check.py" and transforming the GAUL column to a list
+ee_collection = pd.read_csv(path + r"\ee_collection_test.csv")
+countries = ee_collection["GAUL"].tolist()
+
+#creating empty lists to store the values of the loop below
+ndvi_values = []
+country_index = []
+time_index = []
 
 #iterating through years and countries to get each NDVI value
 i = 0
@@ -51,11 +58,16 @@ while i < len(countries):
 
 #timing again
 time_end = time.time()
-print("Data collection finished, it took " + str(time_end - time_begin) + " seconds.")
+print("Data collection finished, it took " + str(round((time_end - time_begin) / 60)) + " minutes.")
 
-#saving the results to a dataframe which can later be merged with the "base" dataframe
+#creating a dataframe containing the results
 df_ndvi = pd.DataFrame()
-df_ndvi["Area"] = country_index
+df_ndvi["GAUL"] = country_index
 df_ndvi["Year"] = time_index
 df_ndvi["NDVI"] = ndvi_values
-df_ndvi.to_csv("ndvi_data.csv")
+
+#saving the results
+df_ndvi.to_csv(path + (r"\ndvi_data.csv"))
+
+print("Results saved locally, path:")
+print(path)
