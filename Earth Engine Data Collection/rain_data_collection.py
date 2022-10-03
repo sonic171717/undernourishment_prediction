@@ -14,20 +14,20 @@ r"\Earth Engine Data Collection")
 ee.Authenticate()
 ee.Initialize()
 
-#function to collect the satellite data and produce a yearly country specific average NDVI value
-def ndvi_collection(country, year):
+#function to collect the satellite data and produce a yearly country specific total precipitation value
+def rain_collection(country, year):
     location = ee.FeatureCollection("FAO/GAUL_SIMPLIFIED_500m/2015/level0"
     ).filter(ee.Filter.eq("ADM0_CODE", country))
-    dataset = ee.ImageCollection("NOAA/CDR/AVHRR/NDVI/V5"
-    ).select("NDVI").filterDate(str(year)+"-01-01", str(year+1)+"-01-01")
+    dataset = ee.ImageCollection("ECMWF/ERA5_LAND/MONTHLY"
+    ).select("total_precipitation").filterDate(str(year)+"-01-01", str(year+1)+"-01-01")
     
     def set_property(image):
-        dict = image.reduceRegion(ee.Reducer.mean(), location, bestEffort=True)
+        dict = image.reduceRegion(ee.Reducer.sum(), location, bestEffort=True)
         return image.set(dict)
 
     pixel_values = dataset.map(set_property)
-    aggregate_pixel_values = (pixel_values.aggregate_array("NDVI").getInfo())
-    mean_pixel_value = np.mean(aggregate_pixel_values)
+    aggregate_pixel_values = (pixel_values.aggregate_array("total_precipitation").getInfo())
+    mean_pixel_value = np.sum(aggregate_pixel_values)
 
     return mean_pixel_value
 
@@ -40,17 +40,17 @@ ee_collection = pd.read_csv(path + r"\ee_collection_dataset.csv")
 countries = ee_collection["GAUL"].tolist()
 
 #creating empty lists to store the values of the loop below
-ndvi_values = []
+rain_values = []
 country_index = []
 time_index = []
 
-#iterating through years and countries to get each NDVI value
+#iterating through years and countries to get each rain value
 i = 0
 while i < len(countries):
     year = 2001
     while year <= 2020:
-        result = ndvi_collection(country = countries[i], year = year)
-        ndvi_values.append(result)
+        result = rain_collection(country = countries[i], year = year)
+        rain_values.append(result)
         country_index.append(countries[i])
         time_index.append(year)
         year += 1
@@ -61,13 +61,13 @@ time_end = time.time()
 print("Data collection finished, it took " + str(round((time_end - time_begin) / 60)) + " minutes.")
 
 #creating a dataframe containing the results
-df_ndvi = pd.DataFrame()
-df_ndvi["GAUL"] = country_index
-df_ndvi["Year"] = time_index
-df_ndvi["NDVI"] = ndvi_values
+df_rain = pd.DataFrame()
+df_rain["GAUL"] = country_index
+df_rain["Year"] = time_index
+df_rain["Precipitation"] = rain_values
 
 #saving the results
-df_ndvi.to_csv(path + (r"\ndvi_data.csv"))
+df_rain.to_csv(path + (r"\rain_data.csv"))
 
 print("Results saved locally, path:")
 print(path)
