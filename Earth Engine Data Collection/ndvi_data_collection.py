@@ -18,15 +18,15 @@ ee.Initialize()
 def ndvi_collection(country, year):
     location = ee.FeatureCollection("FAO/GAUL_SIMPLIFIED_500m/2015/level0"
     ).filter(ee.Filter.eq("ADM0_CODE", country))
-    dataset = ee.ImageCollection("NOAA/CDR/AVHRR/NDVI/V5"
-    ).select("NDVI").filterDate(str(year)+"-01-01", str(year+1)+"-01-01")
+    dataset = ee.ImageCollection("NASA/GIMMS/3GV0"
+    ).select("ndvi").filterDate(str(year)+"-01-01", str(year+1)+"-01-01")
     
     def set_property(image):
         dict = image.reduceRegion(ee.Reducer.mean(), location, bestEffort=True)
         return image.set(dict)
 
     pixel_values = dataset.map(set_property)
-    aggregate_pixel_values = (pixel_values.aggregate_array("NDVI").getInfo())
+    aggregate_pixel_values = (pixel_values.aggregate_array("ndvi").getInfo())
     mean_pixel_value = np.mean(aggregate_pixel_values)
 
     return mean_pixel_value
