@@ -19,7 +19,7 @@ def laihv_collection(country, year):
     location = ee.FeatureCollection("FAO/GAUL_SIMPLIFIED_500m/2015/level0"
     ).filter(ee.Filter.eq("ADM0_CODE", country))
     dataset = ee.ImageCollection("ECMWF/ERA5_LAND/MONTHLY"
-    ).select("leaf_area_high_vegetation").filterDate(str(year)+"-01-01", str(year+1)+"-01-01")
+    ).select("leaf_area_index_high_vegetation").filterDate(str(year)+"-01-01", str(year+1)+"-01-01")
     
     def set_property(image):
         dict = image.reduceRegion(ee.Reducer.mean(), location, bestEffort=True)
