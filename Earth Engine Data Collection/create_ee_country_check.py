@@ -48,10 +48,18 @@ while i < len(countries):
     country_index.append(countries[i])
     i += 1
 
+#creating area index
+countries_with_doubles = df_base["Area"].tolist()
+seen = set()
+countries = []
+for item in countries_with_doubles:
+    if item not in seen:
+        seen.add(item)
+        countries.append(item)
+
 #saving the results of the function
-df_country_check = pd.DataFrame()
-df_country_check["GAUL"] = country_index
-df_country_check["ee check"] = check_result
+dict = {"GAUL": country_index, "Area": countries, "ee check": check_result}
+df_country_check = pd.DataFrame(dict)
 df_country_check.to_csv(path + (r"\ee_country_check.csv"))
 
 #creating a dataset that can be used for data collection

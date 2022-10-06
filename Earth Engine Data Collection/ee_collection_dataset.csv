@@ -1,156 +1,156 @@
-,GAUL
-0,1
-1,3
-2,4
-3,8
-4,12
-5,13
-6,17
-7,18
-8,19
-9,23
-10,24
-11,26
-12,27
-13,28
-14,29
-15,33
-16,34
-17,35
-18,37
-19,40
-20,41
-21,42
-22,47
-23,44
-24,45
-25,49
-26,50
-27,33364
-28,149
-29,57
-30,59
-31,61
-32,66
-33,62
-34,63
-35,64
-36,65
-37,67
-38,68
-39,69
-40,70
-41,71
-42,72
-43,73
-44,40765
-45,75
-46,78
-47,235
-48,79
-49,83
-50,84
-51,85
-52,87
-53,89
-54,90
-55,92
-56,93
-57,94
-58,97
-59,103
-60,107
-61,108
-62,111
-63,113
-64,114
-65,115
-66,116
-67,117
-68,118
-69,119
-70,121
-71,122
-72,123
-73,126
-74,130
-75,132
-76,133
-77,135
-78,137
-79,138
-80,139
-81,140
-82,141
-83,142
-84,144
-85,147
-86,148
-87,150
-88,152
-89,153
-90,155
-91,156
-92,159
-93,160
-94,162
-95,167
-96,2647
-97,169
-98,170
-99,171
-100,172
-101,175
-102,177
-103,178
-104,179
-105,180
-106,182
-107,241
-108,186
-109,187
-110,188
-111,191
-112,192
-113,194
-114,195
-115,196
-116,198
-117,199
-118,202
-119,203
-120,205
-121,211
-122,212
-123,214
-124,215
-125,217
-126,2648
-127,221
-128,223
-129,224
-130,225
-131,226
-132,227
-133,229
-134,231
-135,233
-136,236
-137,237
-138,240
-139,242
-140,243
-141,246
-142,248
-143,249
-144,250
-145,254
-146,255
-147,256
-148,257
-149,260
-150,261
-151,262
-152,263
-153,264
-154,269
+,GAUL,Area
+0,1,Afghanistan
+1,3,Albania
+2,4,Algeria
+3,8,Angola
+4,12,Argentina
+5,13,Armenia
+6,17,Australia
+7,18,Austria
+8,19,Azerbaijan
+9,23,Bangladesh
+10,24,Barbados
+11,26,Belarus
+12,27,Belgium
+13,28,Belize
+14,29,Benin
+15,33,Bolivia (Plurinational State of)
+16,34,Bosnia and Herzegovina
+17,35,Botswana
+18,37,Brazil
+19,40,Brunei Darussalam
+20,41,Bulgaria
+21,42,Burkina Faso
+22,47,Cabo Verde
+23,44,Cambodia
+24,45,Cameroon
+25,49,Central African Republic
+26,50,Chad
+27,33364,"China, Hong Kong Special Administrative Region"
+28,149,"China, Macao Special Administrative Region"
+29,57,Colombia
+30,59,Congo
+31,61,Costa Rica
+32,66,Côte d'Ivoire
+33,62,Croatia
+34,63,Cuba
+35,64,Cyprus
+36,65,Czechia
+37,67,Democratic People's Republic of Korea
+38,68,Democratic Republic of the Congo
+39,69,Denmark
+40,70,Djibouti
+41,71,Dominica
+42,72,Dominican Republic
+43,73,Ecuador
+44,40765,Egypt
+45,75,El Salvador
+46,78,Estonia
+47,235,Eswatini
+48,79,Ethiopia
+49,83,Fiji
+50,84,Finland
+51,85,France
+52,87,French Polynesia
+53,89,Gabon
+54,90,Gambia
+55,92,Georgia
+56,93,Germany
+57,94,Ghana
+58,97,Greece
+59,103,Guatemala
+60,107,Guyana
+61,108,Haiti
+62,111,Honduras
+63,113,Hungary
+64,114,Iceland
+65,115,India
+66,116,Indonesia
+67,117,Iran (Islamic Republic of)
+68,118,Iraq
+69,119,Ireland
+70,121,Israel
+71,122,Italy
+72,123,Jamaica
+73,126,Japan
+74,130,Jordan
+75,132,Kazakhstan
+76,133,Kenya
+77,135,Kiribati
+78,137,Kuwait
+79,138,Kyrgyzstan
+80,139,Lao People's Democratic Republic
+81,140,Latvia
+82,141,Lebanon
+83,142,Lesotho
+84,144,Liberia
+85,147,Lithuania
+86,148,Luxembourg
+87,150,Madagascar
+88,152,Malawi
+89,153,Malaysia
+90,155,Mali
+91,156,Malta
+92,159,Mauritania
+93,160,Mauritius
+94,162,Mexico
+95,167,Mongolia
+96,2647,Montenegro
+97,169,Morocco
+98,170,Mozambique
+99,171,Myanmar
+100,172,Namibia
+101,175,Nepal
+102,177,Netherlands
+103,178,New Caledonia
+104,179,New Zealand
+105,180,Nicaragua
+106,182,Nigeria
+107,241,The former Yugoslav Republic of Macedonia
+108,186,Norway
+109,187,Oman
+110,188,Pakistan
+111,191,Panama
+112,192,Papua New Guinea
+113,194,Paraguay
+114,195,Peru
+115,196,Philippines
+116,198,Poland
+117,199,Portugal
+118,202,Republic of Korea
+119,203,Romania
+120,205,Rwanda
+121,211,Saint Vincent and the Grenadines
+122,212,Samoa
+123,214,Sao Tome and Principe
+124,215,Saudi Arabia
+125,217,Senegal
+126,2648,Serbia
+127,221,Sierra Leone
+128,223,Slovakia
+129,224,Slovenia
+130,225,Solomon Islands
+131,226,Somalia
+132,227,South Africa
+133,229,Spain
+134,231,Sri Lanka
+135,233,Suriname
+136,236,Sweden
+137,237,Switzerland
+138,240,Thailand
+139,242,Timor-Leste
+140,243,Togo
+141,246,Trinidad and Tobago
+142,248,Tunisia
+143,249,Turkey
+144,250,Turkmenistan
+145,254,Ukraine
+146,255,United Arab Emirates
+147,256,United Kingdom of Great Britain and Northern Ireland
+148,257,United Republic of Tanzania
+149,260,Uruguay
+150,261,Uzbekistan
+151,262,Vanuatu
+152,263,Venezuela (Bolivarian Republic of)
+153,264,Viet Nam
+154,269,Yemen
