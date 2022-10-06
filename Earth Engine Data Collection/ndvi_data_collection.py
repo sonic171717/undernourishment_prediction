@@ -81,7 +81,7 @@ time_index_usdos = []
 i = 0
 while i < len(working_countries):
     year = 2001
-    while year <= 2005:
+    while year <= 2020:
         result = ndvi_collection_usdos(country = working_countries[i], year = year)
         ndvi_values_usdos.append(result)
         country_index_usdos.append(working_countries[i])
@@ -111,7 +111,7 @@ time_index_gaul = []
 i = 0
 while i < len(working_gaul):
     year = 2001
-    while year <= 2005:
+    while year <= 2020:
         result = ndvi_collection_gaul(adm0 = working_gaul[i], year = year)
         ndvi_values_gaul.append(result)
         country_index_gaul.append(working_gaul[i])
