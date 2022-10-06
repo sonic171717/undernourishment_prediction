@@ -14,14 +14,14 @@ r"\Earth Engine Data Collection")
 ee.Authenticate()
 ee.Initialize()
 
-#importing the "base" dataset to create a list of the included countries
+#importing the "base" dataset and creating a list of the included countries
 base_df = pd.read_csv(path + r"\ee_collection_dataset.csv")
-
 countries = base_df["Area"].tolist()
 
 time_begin = time.time()
-print("Checking country sizes and complexity...")
+print("Checking country names...")
 
+#checking if the countries are recognized by the USDOS countries feature set
 working_countries = []
 error_countries = []
 
@@ -77,11 +77,11 @@ ndvi_values_usdos = []
 country_index_usdos = []
 time_index_usdos = []
 
-#iterating through years and countries to get each ndvi value
+#iterating through years and countries to get each ndvi value of the USDOS countries
 i = 0
 while i < len(working_countries):
     year = 2001
-    while year <= 2005:
+    while year <= 2020:
         result = ndvi_collection_usdos(country = working_countries[i], year = year)
         ndvi_values_usdos.append(result)
         country_index_usdos.append(working_countries[i])
@@ -95,13 +95,12 @@ ndvi_usdos_df["Year"] = time_index_usdos
 ndvi_usdos_df["ndvi_usdos"] = ndvi_values_usdos
 
 time_middle_2 = time.time()
-print("Usdos countries finished, it took " + str(round((time_middle_2 - time_middle_1) / 60)) + " minutes.")
+print("USDOS countries finished, it took " + str(round((time_middle_2 - time_middle_1) / 60)) + " minutes.")
 
-#Now for the countries that the usdos dataset doesnt recognize.
+#Now same for the countries that the USDOS feature set doesn't recognize
 error_df = pd.DataFrame()
 error_df["Area"] = error_countries
 error_df = error_df.merge(base_df, on="Area", how="left")
-
 working_gaul = error_df["GAUL"].tolist()
 
 ndvi_values_gaul = []
@@ -111,7 +110,7 @@ time_index_gaul = []
 i = 0
 while i < len(working_gaul):
     year = 2001
-    while year <= 2005:
+    while year <= 2020:
         result = ndvi_collection_gaul(adm0 = working_gaul[i], year = year)
         ndvi_values_gaul.append(result)
         country_index_gaul.append(working_gaul[i])
