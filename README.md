@@ -13,3 +13,5 @@ Misc -> old stuff that we will probably delete in the end
 Dataset Construction -> Steps and datasets that are needed to build our final dataset, combining climate, economics and conflict data
 
 Earth Engine Data Collection -> As the name suggests, python scripts that collect data from google earth engine
+
+Models -> Analysing and making predictions with our self-created dataset
