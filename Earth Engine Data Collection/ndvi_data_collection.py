@@ -41,7 +41,7 @@ def ndvi_collection_usdos(country, year):
     ).filterDate(str(year)+"-01-01", str(year+1)+"-01-01")
     
     def setProperty(image):
-        dict = image.reduceRegion(ee.Reducer.median(), location, bestEffort=True)
+        dict = image.reduceRegion(ee.Reducer.mean(), location, bestEffort=True)
         return image.set(dict)
 
     pixel_values = dataset.map(setProperty)
