@@ -5,10 +5,8 @@ import numpy as np
 import pandas as pd
 
 #path to import and export data (paste your own file location here)
-path = (r"C:\Users\nmart\OneDrive - fs-students.de\Dokumente"
-r"\Office\FS\S1\Data Analytics in Business\code_daib"
-r"\Analysing-crop-yields-and-predicting-food-sustainability-of-nations-in-near-future"
-r"\Earth Engine Data Collection")
+path = (r"C:\Users\nmart\OneDrive - fs-students.de\Dokumente\Office\FS"
+r"\S1\Data Analytics in Business\code_daib\undernourishment_prediction\data")
 
 #activate google earth engine API
 ee.Authenticate()
