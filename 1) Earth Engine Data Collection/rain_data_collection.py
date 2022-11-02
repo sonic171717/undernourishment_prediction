@@ -20,6 +20,8 @@ def rain_collection(country, year):
 
     :param country: Current Country GAUL code
     :param year: Current Year
+
+    :return float: mean pixel value of given year and country
     """
 
     location = ee.FeatureCollection("FAO/GAUL_SIMPLIFIED_500m/2015/level0"

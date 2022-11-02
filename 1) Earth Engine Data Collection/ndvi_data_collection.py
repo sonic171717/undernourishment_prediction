@@ -41,6 +41,8 @@ def ndvi_collection_usdos(country, year):
 
     :param country: Current Country Name
     :param year: Current Year
+
+    :return float: mean pixel value of given year and country
     """
 
     location = ee.FeatureCollection("USDOS/LSIB_SIMPLE/2017"
@@ -65,6 +67,8 @@ def ndvi_collection_gaul(adm0, year):
 
     :param adm0: Current Country GAUL Code
     :param year: Current Year
+
+    :return float: mean pixel value of given year and country
     """
 
     location = ee.FeatureCollection("FAO/GAUL_SIMPLIFIED_500m/2015/level0"

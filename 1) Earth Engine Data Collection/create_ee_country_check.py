@@ -18,6 +18,8 @@ def country_check(country):
     precipation and NDVI
 
     :param country: Current Country
+
+    :return string: working, shape_error or name_error
     """
     
     location = ee.FeatureCollection("FAO/GAUL_SIMPLIFIED_500m/2015/level0"
