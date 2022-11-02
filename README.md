@@ -14,13 +14,13 @@ Jerome - https://github.com/sonic171717
 
 Description of files:
 
-data -> Raw input datasets as well as everything that is being created during the project
+1) Earth Engine Data Collection -> As the name suggests, python scripts that collect data from google earth engine
 
-Dataset Construction -> Steps that are needed to build our final dataset, combining climate, economics and conflict data
+2) Dataset Construction -> Steps that are needed to build our final dataset, combining climate, economics and conflict data
 
-Earth Engine Data Collection -> As the name suggests, python scripts that collect data from google earth engine
+3) Models -> Analysing our self-created dataset and making predictions
 
-Models -> Analysing our self-created dataset and making predictions
+4) Data -> Raw input datasets as well as everything that is being created during the project
 
 Further information can be found here:
 
