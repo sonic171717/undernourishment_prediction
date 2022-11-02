@@ -12,8 +12,14 @@ r"\Earth Engine Data Collection")
 ee.Authenticate()
 ee.Initialize()
 
-#function to check if the country will work when collecting data for temperature, precipation and NDVI
 def country_check(country):
+    """
+    check if the country will work when collecting data for temperature, 
+    precipation and NDVI
+
+    :param country: Current Country
+    """
+    
     location = ee.FeatureCollection("FAO/GAUL_SIMPLIFIED_500m/2015/level0"
     ).filter(ee.Filter.eq("ADM0_CODE", country))
     if location.size().getInfo() > 0:

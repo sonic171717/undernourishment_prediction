@@ -31,8 +31,18 @@ for i in countries:
     else:
         error_countries.append(i)
 
-#function to collect the mean ndvi pixel values from the satellite per year per country
 def ndvi_collection_usdos(country, year):
+    """
+    Collect the mean ndvi pixel values from the satellite per year per country.
+    ndvi is more granular than Temperature and Precipitation. The USDOS
+    country filter is less precise and works with more complex geometries.
+    Only countries that are not recognized here (by name) get processed with 
+    their GAUL-Code in the other function below.
+
+    :param country: Current Country Name
+    :param year: Current Year
+    """
+
     location = ee.FeatureCollection("USDOS/LSIB_SIMPLE/2017"
     ).filter(ee.Filter.eq("country_na", str(country)))
     dataset = ee.ImageCollection("NOAA/CDR/AVHRR/NDVI/V5").select("NDVI"
@@ -48,8 +58,15 @@ def ndvi_collection_usdos(country, year):
 
     return mean_pixel_value
 
-#second function for countries that usdos doesn't recognize
 def ndvi_collection_gaul(adm0, year):
+    """
+    Collect the mean ndvi pixel values from the satellite per year per country,
+    for countries that don't work with their name.
+
+    :param adm0: Current Country GAUL Code
+    :param year: Current Year
+    """
+
     location = ee.FeatureCollection("FAO/GAUL_SIMPLIFIED_500m/2015/level0"
     ).filter(ee.Filter.eq("ADM0_CODE", adm0))
     dataset = ee.ImageCollection("NOAA/CDR/AVHRR/NDVI/V5").select("NDVI"

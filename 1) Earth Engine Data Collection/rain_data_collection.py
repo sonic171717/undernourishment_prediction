@@ -14,8 +14,14 @@ r"\Earth Engine Data Collection")
 ee.Authenticate()
 ee.Initialize()
 
-#function to collect the satellite data and produce a yearly country specific total precipitation value
 def rain_collection(country, year):
+    """
+    Collect the satellite data and produce a yearly country specific total precipitation value.
+
+    :param country: Current Country GAUL code
+    :param year: Current Year
+    """
+
     location = ee.FeatureCollection("FAO/GAUL_SIMPLIFIED_500m/2015/level0"
     ).filter(ee.Filter.eq("ADM0_CODE", country))
     dataset = ee.ImageCollection("ECMWF/ERA5_LAND/MONTHLY"
