@@ -16,7 +16,7 @@ ee.Initialize()
 
 def temp_collection(country, year):
     """
-    Collect the satellite data and produce a yearly country specific total precipitation value.
+    Collect the satellite data and produce a yearly country specific mean temperature value.
 
     :param country: Current Country GAUL code
     :param year: Current Year
