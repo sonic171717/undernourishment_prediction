@@ -1,3 +1,11 @@
+"""
+Description
+
+This program retrieves country- and year-specific averages
+of the temperature using the list of working geographies
+(create_ee_country_check.py).
+"""
+
 #import of necessary libraries
 import ee
 import time
