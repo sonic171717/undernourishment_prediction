@@ -1,3 +1,14 @@
+"""
+Description
+
+This program checks whether we can retrieve google earth engine 
+data for a given country in the undernourishment dataset. Reasons
+for errors include varying names, unclear borders or too large or
+complex shapes. The resulting list is used to retrieve actual
+google earth engine data without errors (see other files in this
+folder).
+""" 
+
 #import of necessary libraries
 import ee
 import pandas as pd
